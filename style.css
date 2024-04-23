@@ -37,39 +37,66 @@ main {
 .projects {
     grid-column: 1;
     padding-left: 20px;
+    font-weight: bold;
+    align-self: self-end;
+    font-size: 20px;
 }
 
 .announcements {
     grid-column: 2;
     padding-left: 20px;
+    font-weight: bold;
+    align-self: self-end;
+    font-size: 20px;
+}
+
+.trending {
+    grid-row: 2;
+    padding: 20px;
+    font-weight: bold;
+    align-self: self-end;
+    padding: 0px;
+    font-size: 20px;
 }
 
 .cards {
     
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr;
     padding: 20px;
     gap: 20px;
    
    
 }
 
-.card {
+.card1, .card2, .card3, .card4, .card5, .card6 {
    background-color: #afacd3;
    border-left: 6px solid  #7e78cb;
    border-radius: 10px;
    box-shadow:  4px 4px 10px #7e78cb;
    padding: 20px;
-   
+   display: grid;
+   grid-template-rows: 1fr 3fr 1fr;
+   gap: 4px;
 }
+
+.cardHeader {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cardIcons {
+    justify-self: right;
+}
+
 
 
 
 .menuCards {
     grid-column: 2;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 5fr 1fr 5fr;
     padding: 20px;
     gap: 20px;  
 }
@@ -139,7 +166,7 @@ main {
 #query {
     border-radius: 30px;
     border: 3px solid #7e78cb;
-    width: 50rem;
+    width: 40rem;
     height: 2rem;
     background-color: #afd1e7;
 }
@@ -172,6 +199,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    flex-wrap: wrap;
 }
 
 .topLeft {
@@ -182,6 +210,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .bottomRight {
@@ -192,6 +221,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    flex-wrap: wrap;
 }
 
 .bottomLeft {
@@ -199,7 +229,8 @@ header {
     grid-column: 1 / 2;
     display: flex;
     align-items: center;
-    padding: 20px;    
+    padding: 20px; 
+    flex-wrap: wrap;   
     
 }
 
