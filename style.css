@@ -56,11 +56,15 @@ main {
 }
 
 .card {
-    background-color: #afacd3;
+   background-color: #afacd3;
    border-left: 6px solid  #7e78cb;
    border-radius: 10px;
    box-shadow:  4px 4px 10px #7e78cb;
+   padding: 20px;
+   
 }
+
+
 
 .menuCards {
     grid-column: 2;
@@ -90,18 +94,26 @@ main {
     border-bottom: 2px solid #393485;
 }
 
+
+
 .section1Bottom {
     padding: 10px;
 }
 
 .menuCard2 {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(4, ifr);
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
+
+
 .section2, .section2Icon {
-    padding: 20px;
+    justify-self: left;
+    align-self: center;
+
 }
 
 .sidebar {
